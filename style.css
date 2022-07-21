@@ -1,98 +1,85 @@
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
-    --bg-primary: #23232e; /*à changer à un certain blue*/
-    --bg-secondary: #141418; /*on change le reste aussi*/
-    --text-primary: #b6b6b6;
+    --text-primary: Black;
     --text-secondary: #ececec;
-}
-    /* changement de la barre de défilement :xodios*/
-body {
+    --bg-primary: #16558F;
+    --bg-secondary: #0583D2;
+    --transition-speed: 600ms;
+  }
+  
+  body {
     color: black;
     background-color: white;
     margin: 0;
     padding: 0;
-}
-
-body::-webkit-scrollbar {
+  }
+  
+  body::-webkit-scrollbar {
     width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
+  }
+  
+  body::-webkit-scrollbar-track {
     background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #6649b8;
-}
-/* Le contenu principale */
-main {
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgb(102, 73, 184);
+  }
+  
+  main {
     margin-left: 5rem;
     padding: 1rem;
-}
-/* La barre de navigation:Xodios*/
-.navbar {
+  }
+  
+  .navbar {
     position: fixed;
+    left: 0;
     background-color: var(--bg-primary);
-    transition: width 600ms ease;
-   
-}
-
-.navbar-nav {
+    transition: width 200ms;
+    box-shadow: #00000080 4px 0px 10px -4px;
+  }
+  
+  .navbar-nav {
+    height: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
-    height: 100%;
-}
-
-.nav-item {
+    font-size: 1rem;
+  }
+  
+  .nav-item {
     width: 100%;
-}
-
-.nav-link {
+  }
+  
+  .nav-item:last-child {
+    margin-top: auto;
+  }
+  
+  .nav-link {
     display: flex;
     align-items: center;
-    height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
+    height: 4rem;
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
-}
-
-    .nav-link:hover {
-        filter: grayscale(0%) opacity(1);
-        background: var(--bg-secondary);
-        color: var(--text-secondary);
-    }
-
-.link-text {
-    display: none;
-    margin-left: 1rem;
-}
-
-.nav-link svg {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
-}
-
-.fa-primary {
-    color: #ff7eee;
-}
-
-.fa-secondary {
-    color: #df49a6;
-}
-
-.fa-primary,
-.fa-secondary {
-    transition: var(--transition-speed);
-}
-
-.logo {
+  }
+  
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+  
+  
+  /* Rotation Effect */
+  
+  .logo {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -102,43 +89,86 @@ main {
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
-}
-
-.logo svg {
-    transform: rotate(0deg);
+  }
+  
+  .logo .link-text {
+    margin-left: 1rem;
+  }
+  
+  .logo svg {
+    transform: rotate(360deg);
+    transition: transform var(--transition-speed);
+  }
+  
+  .navbar:hover .logo svg {
+    transform: rotate(360deg);
     transition: var(--transition-speed);
- }
-
-.logo-text {
-    display: inline;
-    position: absolute;
-    left: -999px;
+  }
+  
+  .link-text {
+    display: none;
+    margin-left: 10px;
+  }
+  
+  svg {
+    width: 1.5rem;
+    margin: 0 1.125rem;
+  }
+  
+  .fa-primary {
+    color: cadetblue;
+  }
+  
+  .fa-secondary {
+    color: blue;
+  }
+  
+  .fa-primary,
+  .fa-secondary {
     transition: var(--transition-speed);
-}
-
-.navbar:hover .logo svg {
-    transform: rotate(-180deg);
-}
-
-/* Large screens */
-.navbar {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-}
-
-.navbar:hover {
-    width: 16rem;
-}
-
-.navbar:hover .link-text {
-    display: inline;
-            }
-
-.navbar:hover .logo svg {
-    margin-left: 11rem;
-}
-
-.navbar:hover .logo-text {
-    left: 0px;
-}
+  }
+  
+  /* Version mobile*/
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 4rem;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    main {
+      margin-left: 0;
+    }
+  }
+  
+  /* Version normal*/
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 4rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      opacity: 1;
+      visibility: visible;
+      display: inline;
+      transition: opacity var(--transition-speed);
+    }
+  }
