@@ -129,6 +129,7 @@
     transform: translateY(-20px);
 }
 
+/*
 .contactForm .inputBox input[type="submit"] {
 
     width: 100px;
@@ -139,6 +140,26 @@
     padding: 10px;
     font-size: 18px;
 }
+*/
+
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #303054;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: #a6bcf4;
+    color: #303054;
+}
+
 
 @media (max-width: 990px) {
 
