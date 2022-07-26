@@ -840,19 +840,26 @@ section{
 .footer .credit span{
    color:var(--main-color);
 }
+.header {
+   display:none;
+}
+::placeholder{
+   color: white;
+}
+.icon{
+   width: 18%;
+   height: auto;
+}
+.flyer:hover >.fly{
+   transform: scale(2);
+   transition: transform 1s;
+ }
 
 
 
 
 
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -895,17 +902,3 @@ section{
    }
 
 }
-.header {
-   display:none;
-}
-::placeholder{
-   color: white;
-}
-.icon{
-   width: 18%;
-   height: auto;
-}
-.flyer:hover >.fly{
-   transform: scale(2);
-   transition: transform 1s;
- }
