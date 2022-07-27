@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reunion-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Réunions</title>
+</head>
+
+<body>
+
+    <section class="reunion-sec">
+
+        <div>
+            <h2>Les réunions à venir Lorem ipsum dolor, sit amet consectetur..</h2>
+        </div>
+
+        <div class="reunion-list-grid">
+
+            <div class="reunion-box">
+
+                <img src="assets/book-medical-solid.svg" alt="img">
+                <h3>Réunion #1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="#" class="reunion-btn">Détails et membres de cette réunion...</a>
+            </div>
+
+
+
+        </div>
+
+        <a href="#" class="ajouter-reunion-btn">Ajouter une réunion</a>
+
+        <div class="bg-membres">
+            <div class="membres-content">
+                <i class="fa-solid fa-xmark close-btn"></i>
+                <h2>Détail et memebres</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem iure.
+                    Expedita ratione cumque necessitatibus libero dolorem quaerat pariatur ex.
+                    Dicta ipsum minus delectus tempora!</p>
+
+                <div class="members-list-grid">
+                    <div class="members-info">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>Dahak </span><span>Fouad</span>
+                    </div>
+
+                    <div class="members-info">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>Dahak </span><span>Fouad</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#" class="ajouter-membre-btn">Ajouter un membre</a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        /*
+        let allButtons = document.querySelectorAll(".reunion-btn");
+        for (let btn of allButtons) {
+            document.querySelector(".reunion-btn").addEventListener('click', () => {
+                document.querySelector(".bg-membres").style.display = "flex";
+            });
+
+            document.querySelector(".close-btn").addEventListener('click', () => {
+            document.querySelector(".bg-membres").style.display = "none";
+        });
+        }
+        */
+
+        document.querySelector(".reunion-btn").addEventListener('click', () => {
+            document.querySelector(".bg-membres").style.display = "flex";
+        });
+
+        document.querySelector(".close-btn").addEventListener('click', () => {
+            document.querySelector(".bg-membres").style.display = "none";
+        });
+
+
+        const addMember = document.querySelector('.ajouter-membre-btn');
+        const memberList = document.querySelector('.members-list-grid');
+        let i = 2;
+
+        const addReunion = document.querySelector('.ajouter-reunion-btn');
+        const reunionList = document.querySelector('.reunion-list-grid');
+        let j = 2;
+
+
+        addMember.addEventListener('click', () => {
+            if (i < 8) {
+                const newDiv = document.createElement('div');
+                const newImg = document.createElement('i');
+                const newSpan = document.createElement('span');
+                const newSpan2 = document.createElement('span');
+
+                newDiv.classList.add('members-info')
+                newImg.classList.add('fa-solid');
+                newImg.classList.add('fa-user-doctor');
+                newSpan.innerText = "Dahak ";
+                newSpan2.innerText = "Fouad";
+
+                newDiv.appendChild(newImg);
+                newDiv.appendChild(newSpan);
+                newDiv.appendChild(newSpan2);
+
+                memberList.appendChild(newDiv);
+                i++;
+            }
+
+        });
+
+        addReunion.addEventListener('click', () => {
+            if (j <= 3) {
+                const newDiv = document.createElement('div');
+                const newImg = document.createElement('img');
+                const newH3 = document.createElement('h3');
+                const newP = document.createElement('p');
+                const newA = document.createElement('a');
+
+                newDiv.classList.add('reunion-box')
+                newImg.classList.add('fa-solid');
+                newImg.setAttribute('src', 'assets/book-medical-solid.svg');
+                newImg.setAttribute('alt', 'img');
+                newH3.innerText = `Réunion #${j}`;
+                newP.innerText = "Lorem ipsum dolor sit amet consectetur."
+                newA.classList.add('reunion-btn');
+                newA.innerText = "Détails et membres de cette réunion..."
+                newA.setAttribute('href', '#');
+
+                newDiv.appendChild(newImg);
+                newDiv.appendChild(newH3);
+                newDiv.appendChild(newP);
+                newDiv.appendChild(newA);
+
+                reunionList.appendChild(newDiv);
+                j++;
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
