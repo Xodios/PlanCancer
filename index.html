@@ -1,341 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Plan cancer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Boxicons CDN Link -->
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="icon" href="Images/logoE.png">
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Plan cancer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="Images/logoE.png">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <img class="bx icon" src="Images/logoE.png"></img>
-      <div class="logo_name">Plan cancer</div>
-      <i class='bx bx-menu' id="btn"></i>
+        <div class="logo_name">Plan cancer</div>
+        <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
-        <i class='bx bx-search'></i>
-        <input type="text" placeholder="Recherche...">
-        <span class="tooltip">Recherche</span>
+          <i class='bx bx-search'></i>
+         <input type="text" placeholder="Recherche...">
+         <span class="tooltip">Recherche</span>
       </li>
       <li>
-        <a class="flyer" href="#">
+        <a class="flyer" href="index.html">
           <i class='bx bxs-home-heart fly'></i>
           <span class="links_name">Accueil</span>
         </a>
-        <span class="tooltip">Accueil</span>
+         <span class="tooltip">Accueil</span>
       </li>
       <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-plus-medical fly'></i>
-          <span class="links_name">Plan national cancer</span>
-        </a>
-        <span class="tooltip">Plan national cancer</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-group fly'></i>
-          <span class="links_name">Groupe</span>
-        </a>
-        <span class="tooltip">Groupe</span>
-      </li>
-      <li>
-        <a class="flyer" href="reunion.html">
-          <i class='bx bx-user-voice fly'></i>
-          <span class="links_name">Réunions</span>
-        </a>
-        <span class="tooltip">Réunions</span>
-      </li>
-      <li>
-        <a class="flyer" href="#contribute-section">
-          <i class='bx bx-donate-heart fly'></i>
-          <span class="links_name">Contributions</span>
-        </a>
-        <span class="tooltip">Contributions</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-edit fly'></i>
-          <span class="links_name">Evaluation</span>
-        </a>
-        <span class="tooltip">Evaluation</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-shape-polygon fly'></i>
-          <span class="links_name">Générateur de rapports</span>
-        </a>
-        <span class="tooltip">Générateur de rapports</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-stats fly'></i>
-          <span class="links_name">Statistiques</span>
-        </a>
-        <span class="tooltip">Statistiques</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-phone-call fly'></i>
-          <span class="links_name">Contacts</span>
-        </a>
-        <span class="tooltip">Contacts</span>
-      </li>
-      <li>
-        <a class="flyer" href="#">
-          <i class='bx bx-dots-horizontal fly'></i>
-          <span class="links_name">Autre</span>
-        </a>
-        <span class="tooltip">Autre</span>
-      </li>
-      <li class="profile">
-        <div class="profile-details">
-          <img src="Images/testprofile.jpg" alt="profileImg">
-          <div class="name_job">
-            <div class="name">Fentazi Riad</div>
-            <div class="job">I like penguins:p</div>
-          </div>
-        </div>
-        <i class='bx bx-log-out' id="log_out"></i>
-      </li>
+       <a class="flyer" href="#">
+         <i class='bx bx-plus-medical fly'></i>
+         <span class="links_name">Plan national cancer</span>
+       </a>
+       <span class="tooltip">Plan national cancer</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-group fly'></i>
+         <span class="links_name">Groupe</span>
+       </a>
+       <span class="tooltip">Groupe</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-user-voice fly' ></i>
+         <span class="links_name">Réunions</span>
+       </a>
+       <span class="tooltip">Réunions</span>
+     </li>
+     <li>
+       <a class="flyer" href="contributions.html">
+         <i class='bx bx-donate-heart fly' ></i>
+         <span class="links_name">Contributions</span>
+       </a>
+       <span class="tooltip">Contributions</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-edit fly'></i>
+         <span class="links_name">Evaluation</span>
+       </a>
+       <span class="tooltip">Evaluation</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-shape-polygon fly'></i>
+         <span class="links_name">Générateur de rapports</span>
+       </a>
+       <span class="tooltip">Générateur de rapports</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-stats fly'></i>
+         <span class="links_name">Statistiques</span>
+       </a>
+       <span class="tooltip">Statistiques</span>
+     </li>
+     <li>
+      <a class="flyer" href="#">
+        <i class='bx bx-phone-call fly' ></i>
+        <span class="links_name">Contacts</span>
+      </a>
+      <span class="tooltip">Contacts</span>
+    </li>
+    <li>
+      <a class="flyer" href="#">
+        <i class='bx bx-dots-horizontal fly' ></i>
+        <span class="links_name">Autre</span>
+      </a>
+      <span class="tooltip">Autre</span>
+    </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="Images/testprofile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Fentazi Riad</div>
+             <div class="job">I like penguins:p</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
     </ul>
   </div>
 
   <!-- 2nd page kinda-->
   <section class="header">
-    <div id="menu-btn"></div>
-  </section>
-  </section>
+   <div id="menu-btn"></div>
+     </section>
 
-  <!-- fin du header -->
 
-  <!-- Début du contenu principale  -->
-  <main>
-    <!-- Début des citations  -->
+<!-- fin du header -->
 
-    <section class="home">
-      <div class="swiper home-slider">
+<!-- Début du contenu principale  -->
+<main>
+<!-- Début des citations  -->
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide" style="background:url(Images/image1.jpg) no-repeat">
+<section class="home">
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide" style="background:url(Images/image1.jpg) no-repeat">
             <div class="content">
-              <span>La santé est beaucoup plus que l’absence de maladie!</span>
-              <h3>Luttons contre le cancer!</h3>
-              <a href="" class="btn">Allons-y!</a>
+               <span>La santé est beaucoup plus que l’absence de maladie!</span>
+               <h3>Luttons contre le cancer!</h3>
+               <a href="" class="btn">Allons-y!</a>
             </div>
-          </div>
+         </div>
 
-          <div class="swiper-slide slide" style="background:url(Images/image2.jpg) no-repeat">
+         <div class="swiper-slide slide" style="background:url(Images/image2.jpg) no-repeat">
             <div class="content">
-              <span>Bonne ou mauvaise santé fait notre philosophie!</span>
-              <h3>Aidez nous à vous protéger</h3>
-              <a href="" class="btn">Savoir comment?</a>
+               <span>Bonne ou mauvaise santé fait notre philosophie!</span>
+               <h3>Aidez nous à vous protéger</h3>
+               <a href="" class="btn">Savoir comment?</a>
             </div>
-          </div>
+         </div>
 
-          <div class="swiper-slide slide" style="background:url(Images/image3.jpg) no-repeat">
+         <div class="swiper-slide slide" style="background:url(Images/image3.jpg) no-repeat">
             <div class="content">
-              <span>Votre confiance est note priorité!</span>
-              <h3>il est jamais trop tard</h3>
-              <a href="" class="btn">Savoir comment?</a>
+               <span>Votre confiance est note priorité!</span>
+               <h3>il est jamais trop tard</h3>
+               <a href="" class="btn">Savoir comment?</a>
             </div>
-          </div>
-
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
+         </div>
+         
       </div>
 
-    </section>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
 
-    <!-- Fin des citations -->
+   </div>
 
-    <!-- Début axes  -->
+</section>
 
-    <section class="axes">
+<!-- Fin des citations -->
 
-      <h1 class="heading-title">Les axes</h1>
+<!-- Début axes  -->
 
-      <div class="box-container">
+<section class="axes">
 
-        <div class="box">
-          <img src="Images/icon-1.png" alt="">
-          <h3>Axe 1: Améliorer la prévention contre les facteurs de risque</h3>
-        </div>
+   <h1 class="heading-title">Les axes</h1>
 
-        <div class="box">
-          <img src="Images/icon-2.png" alt="">
-          <h3>Axe 2: Améliorer le dépistage de certains cancers</h3>
-        </div>
+   <div class="box-container">
 
-        <div class="box">
-          <img src="Images/icon-3.png" alt="">
-          <h3>Axe 3: Améliorer le diagnostic</h3>
-        </div>
-
-        <div class="box">
-          <img src="Images/icon-4.png" alt="">
-          <h3>Axe 4: Redynamiser le traitement</h3>
-        </div>
-
+      <div class="box">
+         <img src="Images/icon-1.png" alt="">
+         <h3>Axe 1: Améliorer la prévention contre les facteurs de risque</h3>
       </div>
 
-      <div class="box-container">
-
-        <div class="box">
-          <img src="Images/icon-5.png" alt="">
-          <h3>Axe 5: Organiser l'orientation, l'accompagnement et le suivi du patient</h3>
-        </div>
-
-        <div class="box">
-          <img src="Images/icon-6.png" alt="">
-          <h3>Axe 6: Développer le système d'information et la communication sur les cancers</h3>
-        </div>
-
-        <div class="box">
-          <img src="Images/icon-6.png" alt="">
-          <h3>Axe 7: Renforcer la formation et la recherche sur les cancers</h3>
-        </div>
-
-        <div class="box">
-          <img src="Images/icon-6.png" alt="">
-          <h3>Axe 8: Renforcer les capacités de financement de la prise en charge des cancers</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fin des axes -->
-
-    <!-- Contribute section begins-->
-
-
-    <section class="contribute-sec" id="contribute-section">
-
-      <div>
-        <h2>Des contributions proposées par nos médecins..</h2>
-      </div>
-      <div class="grid">
-
-        <div class="contribute-box">
-          <img src="assets/book-medical-solid.svg" alt="img">
-          <h3>Contribution #1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <a href="" class="contribute-btn">Lire la suite...</a>
-        </div>
-
-
-        <div>
-          <div class="contribute-box">
-            <img src="assets/file-waveform-solid.svg" alt="img">
-            <h3>Contribution #2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <a href="" class="contribute-btn">Lire la suite...</a>
-          </div>
-        </div>
-
-        <div class="contribute-box">
-          <img src="assets/heart-pulse-solid.svg" alt="img">
-          <h3>Contribution #3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <a href="" class="contribute-btn">Lire la suite...</a>
-        </div>
-
-
-        <div class="contribute-box">
-          <img src="assets/staff-aesculapius-solid.svg" alt="img">
-          <h3>Contribution #4</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <a href="" class="contribute-btn">Lire la suite...</a>
-        </div>
-
-
-        <div class="contribute-box">
-          <img src="assets/user-doctor-solid.svg" alt="img">
-          <h3>Contribution #5</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <a href="" class="contribute-btn">Lire la suite...</a>
-        </div>
-
-        <div class="contribute-box">
-          <img src="assets/virus-covid-solid.svg" alt="img">
-          <h3>Contribution #6</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <a href="" class="contribute-btn">Lire la suite...</a>
-        </div>
-
+      <div class="box">
+         <img src="Images/icon-2.png" alt="">
+         <h3>Axe 2: Améliorer le dépistage de certains cancers</h3>
       </div>
 
-    </section>
-
-    <!-- Contribute section ends-->
-
-
-
-    <!-- Début de la section organisation du commité   -->
-
-    <section class="home-about">
-
-      <div class="image">
-        <img src="Images/aboutusimage.jpg" alt="">
+      <div class="box">
+         <img src="Images/icon-3.png" alt="">
+         <h3>Axe 3: Améliorer le diagnostic</h3>
       </div>
 
-      <div class="content">
-        <h3>Organisation du comité</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam
-          ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident
-          voluptate?</p>
-        <a href="" class="btn">En savoir plus?</a>
+      <div class="box">
+         <img src="Images/icon-4.png" alt="">
+         <h3>Axe 4: Redynamiser le traitement</h3>
       </div>
 
-    </section>
+   </div>
 
-    <!-- Fin de la section organisation du commité  -->
+   <div class="box-container">
 
-
-    <!-- début du footer  -->
-
-    <section class="footer">
-
-      <div class="box-container">
-
-        <div class="box">
-          <h3>Redandancer?</h3>
-          <a href=""> <i class="fas fa-angle-right"></i> Accueil</a>
-          <a href=""> <i class="fas fa-angle-right"></i> à propos de nous</a>
-          <a href=""> <i class="fas fa-angle-right"></i> Organisation du comité</a>
-          <a href=""> <i class="fas fa-angle-right"></i> Infos</a>
-        </div>
-
-        <div class="box">
-          <h3>extra links</h3>
-          <a href="#"> <i class="fas fa-angle-right"></i> Nous poser des question</a>
-          <a href="#"> <i class="fas fa-angle-right"></i> Nous joindre</a>
-          <a href="#"> <i class="fas fa-angle-right"></i> Règles</a>
-          <a href="#"> <i class="fas fa-angle-right"></i> Respect</a>
-        </div>
+      <div class="box">
+         <img src="Images/icon-5.png" alt="">
+         <h3>Axe 5: Organiser l'orientation, l'accompagnement et le suivi du patient</h3>
       </div>
 
-    </section>
+      <div class="box">
+         <img src="Images/icon-6.png" alt="">
+         <h3>Axe 6: Développer le système d'information et la communication sur les cancers</h3>
+      </div>
+      
+      <div class="box">
+         <img src="Images/icon-6.png" alt="">
+         <h3>Axe 7: Renforcer la formation et la recherche sur les cancers</h3>
+      </div>
+      
+      <div class="box">
+         <img src="Images/icon-6.png" alt="">
+         <h3>Axe 8: Renforcer les capacités de financement de la prise en charge des cancers</h3>
+      </div>
+   </div>
+</section>
 
-    <!-- fin du footer -->
-  </main>
-  <!-- fin du conrenu principale -->
+<!-- Fin des axes -->
 
-  <!-- custom js file link  -->
-  <script src="script.js"></script>
+<!-- Début de la section organisation du commité   -->
 
-<<<<<<< HEAD
 <section class="home-about">
 
    <div class="image">
@@ -384,8 +265,5 @@
 
 <!-- js  -->
 <script src="js/script.js"></script>
-=======
->>>>>>> c8602b01a16cd18aff09fe0fb8016d0c98bcd06f
 </body>
-
 </html>
