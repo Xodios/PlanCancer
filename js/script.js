@@ -36,17 +36,25 @@ var swiper = new Swiper(".reviews-slider", {
       },
    },
 });
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
 
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
-let currentItem = 3;
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
 
-loadMoreBtn.onclick = () =>{
-   let boxes = [...document.querySelectorAll('.packages .box-container .box')];
-   for (var i = currentItem; i < currentItem + 3; i++){
-      boxes[i].style.display = 'inline-block';
-   };
-   currentItem += 3;
-   if(currentItem >= boxes.length){
-      loadMoreBtn.style.display = 'none';
-   }
-}
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  sidebar.classList.toggle("open");
+  menuBtnChange(); //calling the function(optional)
+});
+
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}   
