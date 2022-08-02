@@ -953,7 +953,9 @@ section {
 }
 
 
-
+main {
+   padding-left: 9rem;
+}
 
 
 
@@ -993,9 +995,6 @@ section {
       font-size: 4rem;
    }
 
-   main {
-      padding-left: 15%;
-   }
 
    .contribute-sec h2 {
       font-size: 21px;
@@ -1013,9 +1012,7 @@ section {
       font-size: 50%;
    }
 
-   main {
-      padding-left: 15%;
-   }
+
 
    .heading-title {
       font-size: 3.5rem;
