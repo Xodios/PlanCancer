@@ -939,19 +939,6 @@ section {
    padding-right: 2rem;
 }
 
-.footer .credit {
-   text-align: center;
-   padding-top: 3rem;
-   margin-top: 3rem;
-   border-top: .1rem solid var(--light-white);
-   font-size: 2rem;
-   color: var(--white);
-}
-
-.footer .credit span {
-   color: var(--main-color);
-}
-
 
 main {
    padding-left: 8rem;

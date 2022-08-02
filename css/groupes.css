@@ -1,0 +1,68 @@
+:root {
+    --main-color: #104a8e;
+}
+.titre {
+    margin: 20px;
+}
+html {
+    background-color: #4C78AB;
+}
+main .menuu {
+    width: 200px;
+    height: 150px;
+    overflow: auto;    
+}
+
+main .menuu a {
+    background-color: var(--main-color);
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+.menuu .box-container::-webkit-scrollbar {
+    width: 1rem;
+ }
+ 
+.menuu .box-container::-webkit-scrollbar-track {
+    background-color: var(--white);
+ }
+ 
+.menuu .box-container::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+ }
+ 
+
+main .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    margin: 2rem;
+ }
+ 
+main .box-container .box h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+ }
+ 
+main .box-container .box a {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+ }
+ 
+ 
+main .box-container .box a:hover i {
+    padding-right: 2rem;
+ }
+ 
+main .menuu a:hover {
+    background-color: white; /* à changer*/   
+    color: var(--main-color); 
+    transform: scaleY(1.2);
+    transition: transform 1s;
+}
