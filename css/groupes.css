@@ -22,19 +22,6 @@ main .menuu a {
 }
 
 
-.menuu .box-container::-webkit-scrollbar {
-    width: 1rem;
- }
- 
-.menuu .box-container::-webkit-scrollbar-track {
-    background-color: var(--white);
- }
- 
-.menuu .box-container::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
- }
- 
-
 main .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
