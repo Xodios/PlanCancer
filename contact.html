@@ -1,83 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="fr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plan cancer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style/style-contact.css">
-</head>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="Images/logoE.png">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   </head>
 <body>
-    <section class="contact">
-        <div class="content">
-            <h2>Contactez-nous</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Pariatur saepe odit dignissimos fugit in ipsam,
-                architecto quos optio repellat.
-                Sapiente obcaecati sit facere impedit,
-                magnam omnis expedita optio hic similique.</p>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img class="bx icon" src="Images/logoE.png"></img>
+        <div class="logo_name">Plan cancer</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search'></i>
+         <input type="text" placeholder="Recherche...">
+         <span class="tooltip">Recherche</span>
+      </li>
+      <li>
+        <a class="flyer" href="index.html">
+          <i class='bx bxs-home-heart fly'></i>
+          <span class="links_name">Accueil</span>
+        </a>
+         <span class="tooltip">Accueil</span>
+      </li>
+      <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-plus-medical fly'></i>
+         <span class="links_name">Plan national cancer</span>
+       </a>
+       <span class="tooltip">Plan national cancer</span>
+     </li>
+     <li>
+       <a class="flyer" href="groupe.html">
+         <i class='bx bx-group fly'></i>
+         <span class="links_name">Groupe</span>
+       </a>
+       <span class="tooltip">Groupe</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-user-voice fly' ></i>
+         <span class="links_name">Réunions</span>
+       </a>
+       <span class="tooltip">Réunions</span>
+     </li>
+     <li>
+       <a class="flyer" href="contributions.html">
+         <i class='bx bx-donate-heart fly' ></i>
+         <span class="links_name">Contributions</span>
+       </a>
+       <span class="tooltip">Contributions</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-edit fly'></i>
+         <span class="links_name">Evaluation</span>
+       </a>
+       <span class="tooltip">Evaluation</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-shape-polygon fly'></i>
+         <span class="links_name">Générateur de rapports</span>
+       </a>
+       <span class="tooltip">Générateur de rapports</span>
+     </li>
+     <li>
+       <a class="flyer" href="#">
+         <i class='bx bx-stats fly'></i>
+         <span class="links_name">Statistiques</span>
+       </a>
+       <span class="tooltip">Statistiques</span>
+     </li>
+     <li>
+      <a class="flyer" href="contact.html">
+        <i class='bx bx-phone-call fly' ></i>
+        <span class="links_name">Contacts</span>
+      </a>
+      <span class="tooltip">Contacts</span>
+    </li>
+    <li>
+      <a class="flyer" href="#">
+        <i class='bx bx-dots-horizontal fly' ></i>
+        <span class="links_name">Autre</span>
+      </a>
+      <span class="tooltip">Autre</span>
+    </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="Images/testprofile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Fentazi Riad</div>
+             <div class="job">I like penguins:p</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+  <!-- 2nd page kinda-->
+  <section class="header">
+   <div id="menu-btn"></div>
+     </section>
+
+<!-- fin du header -->
+
+<!-- Début du contenu principale  -->
+  <main>
+    <h1 class="titre"> Liste des membres</h1>
+    <div class="list">
+        <div class="line1">
+            <div class="membre enfant">
+                <div class="details">
+                    <h1 class="nom">ID/Nom</h1>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Type d'utilisateur</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>Groupes</h2>
+            </div>
+            <div class="adresse enfant">
+                 <h2>Adresse</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>N° tel</h2>
+            </div>
+            <div class="email enfant">
+                <h2>E-mail</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"> <i class="fa-solid fa-map-location-dot"></i> </div>
-                    <div class="text">
-                        <h3>Adresse</h3>
-                        <p> 12, Rue Colonel Lotfi, 16000</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="icon"> <i class="fa-solid fa-envelope"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p> example@esi.dz</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="icon"> <i class="fa-solid fa-phone"></i> </div>
-                    <div class="text">
-                        <h3>Téléphone</h3>
-                        <p> +213554657601</p>
-                    </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Dr Bouzida</h1>
+                    <h2 class="id" >01</h2>
                 </div>
             </div>
-
-            <div class="contactForm">
-                <form>
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required>
-                        <span>Nom et prénom</span>
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="text" name="" required>
-                        <span>Email</span>
-                        </input>
-                    </div>
-
-                    <div class="inputBox">
-                        <textarea required></textarea>
-                        <span>Votre Message...</span>
-                    </div>
-
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send"">
-                    </div>
-                </form>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
             </div>
-    </section>
-
-
+             <div class="groupe enfant">
+                <h2>touts</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>DrBouzida@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">P Zitouni</h1>
+                    <h2 class="id" >02</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>touts</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>PZitouni@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne3</h1>
+                    <h2 class="id" >03</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>1 - 4</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne4</h1>
+                    <h2 class="id" >04</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>3 - 4</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne5</h1>
+                    <h2 class="id" >05</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>5 - 7</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne6</h1>
+                    <h2 class="id" >06</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>2</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne7</h1>
+                    <h2 class="id" >07</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>6</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne8</h1>
+                    <h2 class="id" >08</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>5</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne9</h1>
+                    <h2 class="id" >09</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>1</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne10</h1>
+                    <h2 class="id" >10</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>5</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne11</h1>
+                    <h2 class="id" >11</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Admin</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>3-6</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="membre enfant">
+                <img src="Images/testprofile.jpg" alt="">
+                <div class="details">
+                    <h1 class="nom">Personne12</h1>
+                    <h2 class="id" >12</h2>
+                </div>
+            </div>
+            <div class="typeutilisateur enfant">
+                <h2>Membre</h2>
+            </div>
+             <div class="groupe enfant">
+                <h2>7</h2>
+            </div>
+            <div class="adresse enfant">
+                <h2>INSP, Alger</h2>
+            </div>
+            <div class="Ntel enfant">
+                <h2>+0102030405</h2>
+            </div>
+            <div class="email enfant">
+                <h2>membre@insp.dz</h2>
+             </div>
+            <div class="dots dernierenfant">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+  </main>
+<!-- fin du contenu principale  -->
+<!-- js  -->
+<script src="js/script.js"></script>
 </body>
-
 </html>
