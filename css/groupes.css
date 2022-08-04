@@ -1,55 +1,104 @@
 :root {
     --main-color: #104a8e;
 }
+* {
+    box-sizing: border-box;
+}
+
 .titre {
-    margin: 20px;
-}
-body {
-    background-color: #4C78AB;
-}
-main .menuu {
-    width: 200px;
-    height: 150px;
-    overflow: auto;    
-}
-
-main .menuu a {
-    background-color: var(--main-color);
-    color: white;
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-}
-
-
-main .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
     margin: 2rem;
- }
- 
-main .box-container .box h2 {
+}
+
+body {
+    background-color: white;/**#4C78AB;**/
+    font-family:"Roboto", sans-serif;
+}
+
+h2 {
+    margin: 16px;
+}
+
+.container {
+   margin-top: 100px;
+   padding: 32px;
+}
+
+.choix {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+.choix .option-box {
+    background: var(--main-color);
     color: white;
-    font-size: 2.5rem;
-    padding: 1rem;
- }
- 
-main .box-container .box a {
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+}
+
+.choisi {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    margin-bottom: 8px;
     color: white;
-    font-size: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: block;
- }
- 
- 
-main .box-container .box a:hover i {
-    padding-right: 2rem;
- }
- 
-main .menuu a:hover {
-    background-color: white; /* à changer*/   
-    color: var(--main-color); 
-    transform: scaleY(1.2);
-    transition: transform 1s;
+    position: relative;
+    order: 0;
+}
+
+.choisi::after {
+    content: "";
+    background: url(Images/arrow-down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    transition: all 0.4s;
+}
+
+.choix .option-box.active /* sans espace ça veut dire que l'élément a besoin d'avoir les 2 classes*/ {
+    max-height: 120px;
+    opacity: 1;
+    overflow-y: scroll ;
+}
+
+.choix .option-box.active + .choisi::after {
+transform: rotateX(180deg);
+top: -6px;
+}
+
+.choix .option-box::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--main-color);
+    border-radius: 0 8px 8px 0;
+}
+
+.choix .option-box::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.choix .option,
+.chosisi {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.choix .option:hover {
+    background: #4C78AB;
+}
+
+.choix label {
+    cursor: pointer;
+}
+
+.choix .option .radio {
+    display: none;
 }
