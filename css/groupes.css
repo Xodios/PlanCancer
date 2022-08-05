@@ -1,10 +1,6 @@
 :root {
     --main-color: #104a8e;
 }
-* {
-    box-sizing: border-box;
-}
-
 .titre {
     margin: 2rem;
 }
@@ -19,7 +15,6 @@ h2 {
 }
 
 .container {
-   margin-top: 100px;
    padding: 32px;
 }
 
@@ -101,4 +96,22 @@ top: -6px;
 
 .choix .option .radio {
     display: none;
+}
+
+.container h2 {
+    font-size: large;
+}
+
+* {
+    font-size: large;
+}
+
+.selection .container {
+
+    display: inline-flex
+
+}
+
+.chosisi a {
+    margin-left: 20px ;
 }
