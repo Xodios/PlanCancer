@@ -1,238 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Plan cancer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/groupes.css">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="icon" href="Images/logoE.png">
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Plan cancer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/groupes.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="icon" href="Images/logoE.png">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <img class="bx icon" src="Images/logoE.png"></img>
-        <div class="logo_name">Plan cancer</div>
-        <i class='bx bx-menu' id="btn" ></i>
+      <div class="logo_name">Plan cancer</div>
+      <i class='bx bx-menu' id="btn"></i>
     </div>
     <ul class="nav-list">
       <li>
-          <i class='bx bx-search'></i>
-         <input type="text" placeholder="Recherche...">
-         <span class="tooltip">Recherche</span>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Recherche...">
+        <span class="tooltip">Recherche</span>
       </li>
       <li>
         <a class="flyer" href="index.html">
           <i class='bx bxs-home-heart fly'></i>
           <span class="links_name">Accueil</span>
         </a>
-         <span class="tooltip">Accueil</span>
+        <span class="tooltip">Accueil</span>
       </li>
       <li>
-       <a class="flyer" href="#">
-         <i class='bx bx-plus-medical fly'></i>
-         <span class="links_name">Plan national cancer</span>
-       </a>
-       <span class="tooltip">Plan national cancer</span>
-     </li>
-     <li>
-       <a class="flyer" href="groupe.html">
-         <i class='bx bx-group fly'></i>
-         <span class="links_name">Groupe</span>
-       </a>
-       <span class="tooltip">Groupe</span>
-     </li>
-     <li>
-       <a class="flyer" href="reunion.html">
-         <i class='bx bx-user-voice fly' ></i>
-         <span class="links_name">Réunions</span>
-       </a>
-       <span class="tooltip">Réunions</span>
-     </li>
-     <li>
-       <a class="flyer" href="contributions.html">
-         <i class='bx bx-donate-heart fly' ></i>
-         <span class="links_name">Contributions</span>
-       </a>
-       <span class="tooltip">Contributions</span>
-     </li>
-     <li>
-       <a class="flyer" href="#">
-         <i class='bx bx-edit fly'></i>
-         <span class="links_name">Evaluation</span>
-       </a>
-       <span class="tooltip">Evaluation</span>
-     </li>
-     <li>
-       <a class="flyer" href="#">
-         <i class='bx bx-shape-polygon fly'></i>
-         <span class="links_name">Générateur de rapports</span>
-       </a>
-       <span class="tooltip">Générateur de rapports</span>
-     </li>
-     <li>
-       <a class="flyer" href="#">
-         <i class='bx bx-stats fly'></i>
-         <span class="links_name">Statistiques</span>
-       </a>
-       <span class="tooltip">Statistiques</span>
-     </li>
-     <li>
-      <a class="flyer" href="contact.html">
-        <i class='bx bx-phone-call fly' ></i>
-        <span class="links_name">Contacts</span>
-      </a>
-      <span class="tooltip">Contacts</span>
-    </li>
-    <li>
-      <a class="flyer" href="#">
-        <i class='bx bx-dots-horizontal fly' ></i>
-        <span class="links_name">Autre</span>
-      </a>
-      <span class="tooltip">Autre</span>
-    </li>
-     <li class="profile">
-         <div class="profile-details">
-           <img src="Images/testprofile.jpg" alt="profileImg">
-           <div class="name_job">
-             <div class="name">Fentazi Riad</div>
-             <div class="job">I like penguins:p</div>
-           </div>
-         </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
-     </li>
+        <a class="flyer" href="#">
+          <i class='bx bx-plus-medical fly'></i>
+          <span class="links_name">Plan national cancer</span>
+        </a>
+        <span class="tooltip">Plan national cancer</span>
+      </li>
+      <li>
+        <a class="flyer" href="groupe.html">
+          <i class='bx bx-group fly'></i>
+          <span class="links_name">Groupe</span>
+        </a>
+        <span class="tooltip">Groupe</span>
+      </li>
+      <li>
+        <a class="flyer" href="reunion.html">
+          <i class='bx bx-user-voice fly'></i>
+          <span class="links_name">Réunions</span>
+        </a>
+        <span class="tooltip">Réunions</span>
+      </li>
+      <li>
+        <a class="flyer" href="contributions.html">
+          <i class='bx bx-donate-heart fly'></i>
+          <span class="links_name">Contributions</span>
+        </a>
+        <span class="tooltip">Contributions</span>
+      </li>
+      <li>
+        <a class="flyer" href="#">
+          <i class='bx bx-edit fly'></i>
+          <span class="links_name">Evaluation</span>
+        </a>
+        <span class="tooltip">Evaluation</span>
+      </li>
+      <li>
+        <a class="flyer" href="#">
+          <i class='bx bx-shape-polygon fly'></i>
+          <span class="links_name">Générateur de rapports</span>
+        </a>
+        <span class="tooltip">Générateur de rapports</span>
+      </li>
+      <li>
+        <a class="flyer" href="#">
+          <i class='bx bx-stats fly'></i>
+          <span class="links_name">Statistiques</span>
+        </a>
+        <span class="tooltip">Statistiques</span>
+      </li>
+      <li>
+        <a class="flyer" href="contact.html">
+          <i class='bx bx-phone-call fly'></i>
+          <span class="links_name">Contacts</span>
+        </a>
+        <span class="tooltip">Contacts</span>
+      </li>
+      <li>
+        <a class="flyer" href="#">
+          <i class='bx bx-dots-horizontal fly'></i>
+          <span class="links_name">Autre</span>
+        </a>
+        <span class="tooltip">Autre</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="Images/testprofile.jpg" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Fentazi Riad</div>
+            <div class="job">I like penguins:p</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
     </ul>
   </div>
 
   <!-- 2nd page kinda-->
   <section class="header">
-   <div id="menu-btn"></div>
-     </section>
-    <main>
-      <h1 class="titre">consultation des groupes</h1>
-      <div class="selection">
-        <div class="container">
+    <div id="menu-btn"></div>
+  </section>
+  <main>
+    <h1 class="titre">consultation des groupes</h1>
+    <div class="selection">
+      <div class="container">
         <h2>Veuillez choisir la thématique</h2>
-          <div class="choix"> <!-- select box-->
-            <div class="option-box"> <!-- option container-->
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique1"
-                name="category">
-                <label for="Theméatique1">Theméatique 1</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique2"
-                name="category">
-                <label for="Theméatique2">Theméatique 2</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique3"
-                name="category">
-                <label for="Theméatique3">Theméatique 3</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique4"
-                name="category">
-                <label for="Theméatique4">Theméatique 4</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique5"
-                name="category">
-                <label for="Theméatique5">Theméatique 5</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Theméatique6"
-                name="category">
-                <label for="Theméatique6">Theméatique 6</label>
-              </div>
+        <div class="choix">
+          <!-- select box-->
+          <div class="option-box">
+            <!-- option container-->
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique1" name="category">
+              <label for="Theméatique1">Theméatique 1</label>
             </div>
-            <div class="choisi">
-              <a>Choisir la thématique</a>
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique2" name="category">
+              <label for="Theméatique2">Theméatique 2</label>
+            </div>
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique3" name="category">
+              <label for="Theméatique3">Theméatique 3</label>
+            </div>
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique4" name="category">
+              <label for="Theméatique4">Theméatique 4</label>
+            </div>
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique5" name="category">
+              <label for="Theméatique5">Theméatique 5</label>
+            </div>
+            <div class="option option1">
+              <input type="radio" class="radio" id="Theméatique6" name="category">
+              <label for="Theméatique6">Theméatique 6</label>
             </div>
           </div>
+          <div class="choisi">
+            <a>Choisir la thématique</a>
+          </div>
         </div>
-        <div class="container">
+      </div>
+      <div class="container">
         <h2>Veuillez choisir le groupe</h2>
-          <div class="choix"> <!-- select box-->
-            <div class="option-box"> <!-- option container-->
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe1"
-                name="category">
-                <label for="Groupe1">Groupe 1</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe2"
-                name="category">
-                <label for="Groupe2">Groupe 2</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe3"
-                name="category">
-                <label for="Groupe3">Groupe 3</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe4"
-                name="category">
-                <label for="Groupe4">Groupe 4</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe5"
-                name="category">
-                <label for="Groupe5">Groupe 5</label>
-              </div>
-              <div class="option">
-                <input 
-                type="radio" 
-                class="radio" 
-                id="Groupe6"
-                name="category">
-                <label for="Groupe6">Groupe 6</label>
-              </div>
+        <div class="choix">
+          <!-- select box-->
+          <div class="option-box" id="#option-box2">
+            <!-- option container-->
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe1" name="category">
+              <label for="Groupe1">Groupe 1</label>
             </div>
-            <div class="choisi">
-              <a>Choisir le groupe</a>
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe2" name="category">
+              <label for="Groupe2">Groupe 2</label>
+            </div>
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe3" name="category">
+              <label for="Groupe3">Groupe 3</label>
+            </div>
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe4" name="category">
+              <label for="Groupe4">Groupe 4</label>
+            </div>
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe5" name="category">
+              <label for="Groupe5">Groupe 5</label>
+            </div>
+            <div class="option option2">
+              <input type="radio" class="radio" id="Groupe6" name="category">
+              <label for="Groupe6">Groupe 6</label>
             </div>
           </div>
+          <div class="choisi" id="#choisi2">
+            <a>Choisir le groupe</a>
+          </div>
         </div>
+      </div>
     </div>
-    </main>
+  </main>
   <script src="js/script.js"></script>
   <script src="js/groupe.js"></script>
-</body>   
+</body>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Styling for contribue section begins*/
+/* I'll add the nav bar later*/
+
+.contribute-sec {
+    background-color: #e6edff;
+    padding: 150px 50px 150px 75px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contribute-sec h2 {
+    padding: 0px 23px;
+    font-size: 24px;
+}
+
+.contribute-sec .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.contribute-sec .contribute-box {
+    margin: 35px 20px;
+    background-color: #fff;
+    padding: 47px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #b4afaf;
+    transition: all 0.5s;
+}
+
+.contribute-sec .contribute-box img {
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+}
+
+
+.contribute-sec .contribute-box h3 {
+    margin: 15px 0 10px;
+    font-size: 19px;
+}
+
+.contribute-sec .contribute-box p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.contribute-sec .contribute-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.contribute-btn {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #303054;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contribute-btn:hover {
+    background-color: #e6edff;
+    color: #303054;
+}
+
+
+/* Styling for contribue section ends*/
