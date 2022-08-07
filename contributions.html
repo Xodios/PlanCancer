@@ -7,14 +7,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style-contributions.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Contributions</title>
 </head>
 
 <body>
-
+    <div class="sidebar">
+        <div class="logo-details">
+           <img class="bx icon" src="Images/logoE.png"></img>
+           <div class="logo_name">Plan cancer</div>
+           <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+           <li>
+              <i class='bx bx-search'></i>
+              <input type="text" placeholder="Recherche...">
+              <span class="tooltip">Recherche</span>
+           </li>
+           <li>
+              <a class="flyer" href="index.html">
+                 <i class='bx bxs-home-heart fly'></i>
+                 <span class="links_name">Accueil</span>
+              </a>
+              <span class="tooltip">Accueil</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-plus-medical fly'></i>
+                 <span class="links_name">Plan national cancer</span>
+              </a>
+              <span class="tooltip">Plan national cancer</span>
+           </li>
+           <li>
+              <a class="flyer" href="groupe.html">
+                 <i class='bx bx-group fly'></i>
+                 <span class="links_name">Groupe</span>
+              </a>
+              <span class="tooltip">Groupe</span>
+           </li>
+           <li>
+              <a class="flyer" href="reunion.html">
+                 <i class='bx bx-user-voice fly'></i>
+                 <span class="links_name">Réunions</span>
+              </a>
+              <span class="tooltip">Réunions</span>
+           </li>
+           <li>
+              <a class="flyer" href="contributions.html">
+                 <i class='bx bx-donate-heart fly'></i>
+                 <span class="links_name">Contributions</span>
+              </a>
+              <span class="tooltip">Contributions</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-edit fly'></i>
+                 <span class="links_name">Evaluation</span>
+              </a>
+              <span class="tooltip">Evaluation</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-shape-polygon fly'></i>
+                 <span class="links_name">Générateur de rapports</span>
+              </a>
+              <span class="tooltip">Générateur de rapports</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-stats fly'></i>
+                 <span class="links_name">Statistiques</span>
+              </a>
+              <span class="tooltip">Statistiques</span>
+           </li>
+           <li>
+              <a class="flyer" href="contact.html">
+                 <i class='bx bx-phone-call fly'></i>
+                 <span class="links_name">Contacts</span>
+              </a>
+              <span class="tooltip">Contacts</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-dots-horizontal fly'></i>
+                 <span class="links_name">Autre</span>
+              </a>
+              <span class="tooltip">Autre</span>
+           </li>
+           <li class="profile">
+              <div class="profile-details">
+                 <img src="Images/testprofile.jpg" alt="profileImg">
+                 <div class="name_job">
+                    <div class="name">Fentazi Riad</div>
+                    <div class="job">I like penguins:p</div>
+                 </div>
+              </div>
+              <i class='bx bx-log-out' id="log_out"></i>
+           </li>
+        </ul>
+     </div>
+  
+     <!-- 2nd page kinda-->
+     <section class="header">
+        <div id="menu-btn"></div>
+     </section>
+  
     <section class="contribute-sec">
-
-
 
         <div>
             <h2>Des contributions proposées par nos médecins..</h2>
@@ -70,5 +171,5 @@
     </section>
 
 </body>
-
+<script src="js/script.js"></script>
 </html>
