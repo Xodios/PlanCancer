@@ -385,22 +385,6 @@ section {
    color: var(--black);
 }
 
-.header {
-   position: sticky;
-   top: 0;
-   left: 0;
-   right: 0;
-   z-index: 1000;
-   background-color: var(--white);
-   display: flex;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
-   box-shadow: var(--box-shadow);
-   align-items: center;
-   justify-content: space-between;
-}
-
-
 
 #menu-btn {
    font-size: 2.5rem;
@@ -1017,10 +1001,6 @@ main {
       font-size: 14px;
    }
 
-}
-
-.header {
-   display: none;
 }
 
 ::placeholder {
