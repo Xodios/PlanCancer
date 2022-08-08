@@ -3,8 +3,16 @@
 /* Styling for contribue section begins*/
 /* I'll add the nav bar later*/
 
+:root {
+    --main-color: #104a8e;
+    --secondary-color: #1f5696;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
 .contribute-sec {
-    background-color: #e6edff;
+    background-color: var(--secondary-color);
     padding: 150px 50px 150px 75px;
     font-family: "Poppins", sans-serif;
 }
@@ -68,7 +76,7 @@
 }
 
 .contribute-btn:hover {
-    background-color: #e6edff;
+    background-color: var(--secondary-color);
     color: #303054;
 }
 

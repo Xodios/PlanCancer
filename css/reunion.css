@@ -1,5 +1,13 @@
+:root {
+    --main-color: #104a8e;
+    --secondary-color: #1f5696;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
 .reunion-sec {
-    background-color: #e6edff;
     padding: 150px 0px;
     font-family: "Poppins", sans-serif;
 }
@@ -24,7 +32,7 @@
     padding: 47px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 0 15px #b4afaf;
+    box-shadow: 0 0 15px var(--main-color);
     transition: all 0.5s;
 }
 
