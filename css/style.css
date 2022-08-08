@@ -387,10 +387,7 @@ section {
 
 
 #menu-btn {
-   font-size: 2.5rem;
-   cursor: pointer;
-   color: var(--black);
-   display: none;
+display: none;
 }
 
 .home {
