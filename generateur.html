@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+    <title>Générateur des rapports</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,107 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/generateur.css">
-    <title>Générateur des rapports</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="Images/logoE.png">
 </head>
 
 <body>
+    <div class="sidebar">
+        <div id="menu-btn"></div>
+        <div class="logo-details">
+           <img class="bx icon" src="Images/logoE.png"></img>
+           <div class="logo_name">Plan cancer</div>
+           <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+           <li>
+              <i class='bx bx-search'></i>
+              <input type="text" placeholder="Recherche...">
+              <span class="tooltip">Recherche</span>
+           </li>
+           <li>
+              <a class="flyer" href="index.html">
+                 <i class='bx bxs-home-heart fly'></i>
+                 <span class="links_name">Accueil</span>
+              </a>
+              <span class="tooltip">Accueil</span>
+           </li>
+           <li>
+              <a class="flyer" href="plancancer.html">
+                 <i class='bx bx-plus-medical fly'></i>
+                 <span class="links_name">Plan national cancer</span>
+              </a>
+              <span class="tooltip">Plan national cancer</span>
+           </li>
+           <li>
+              <a class="flyer" href="groupe.html">
+                 <i class='bx bx-group fly'></i>
+                 <span class="links_name">Groupe</span>
+              </a>
+              <span class="tooltip">Groupe</span>
+           </li>
+           <li>
+              <a class="flyer" href="reunion.html">
+                 <i class='bx bx-user-voice fly'></i>
+                 <span class="links_name">Réunions</span>
+              </a>
+              <span class="tooltip">Réunions</span>
+           </li>
+           <li>
+              <a class="flyer" href="contributions.html">
+                 <i class='bx bx-donate-heart fly'></i>
+                 <span class="links_name">Contributions</span>
+              </a>
+              <span class="tooltip">Contributions</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-edit fly'></i>
+                 <span class="links_name">Evaluation</span>
+              </a>
+              <span class="tooltip">Evaluation</span>
+           </li>
+           <li>
+              <a class="flyer" href="generateur.html">
+                 <i class='bx bx-shape-polygon fly'></i>
+                 <span class="links_name">Générateur de rapports</span>
+              </a>
+              <span class="tooltip">Générateur de rapports</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-stats fly'></i>
+                 <span class="links_name">Statistiques</span>
+              </a>
+              <span class="tooltip">Statistiques</span>
+           </li>
+           <li>
+              <a class="flyer" href="contact.html">
+                 <i class='bx bx-phone-call fly'></i>
+                 <span class="links_name">Contacts</span>
+              </a>
+              <span class="tooltip">Contacts</span>
+           </li>
+           <li>
+              <a class="flyer" href="#">
+                 <i class='bx bx-dots-horizontal fly'></i>
+                 <span class="links_name">Autre</span>
+              </a>
+              <span class="tooltip">Autre</span>
+           </li>
+           <li class="profile">
+              <div class="profile-details">
+                 <img src="Images/testprofile.jpg" alt="profileImg">
+                 <div class="name_job">
+                    <div class="name">Fentazi Riad</div>
+                    <div class="job">I like penguins:p</div>
+                 </div>
+              </div>
+              <i class='bx bx-log-out' id="log_out"></i>
+           </li>
+        </ul>
+     </div>
     <div class="container">
         <h3>Importer votre document</h3>
         <div class="drag-area">
@@ -28,7 +126,7 @@
     </div>
 
     <footer>
-        <p> <span class="inside-foot">This is how it works: </span> La personne x importe des fichiers word (.doc), la
+        <p> <span class="inside-foot">Explication du focntionnement</span> La personne x importe des fichiers word (.doc), la
             personne y télécharge ces fichiers
         </p>
     </footer>
@@ -36,5 +134,5 @@
 
     <script src="js/generateur.js"></script>
 </body>
-
+<script src="js/script.js"></script>
 </html>
