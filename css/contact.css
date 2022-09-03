@@ -1,16 +1,19 @@
 body {
     background-color: #1f5696;
 }
+
 .titre {
     color: white;
     margin-left: 10%;
     margin-top: 5rem;
 }
+
 .list {
     width: 90%;
     margin: auto;
     padding: 3rem;
 }
+
 .line {
     margin-bottom: 1rem;
     display: flex;
@@ -22,32 +25,39 @@ body {
     cursor: pointer;
     transition: all 0.3s;
 }
+
 .line:hover {
     box-shadow: 0 0 0.8rem black;
 }
+
 .nom {
     font-size: 2rem;
     color: black;
 }
+
 h2 {
     font-size: 1.6rem;
     color: black;
     font-weight: 500;
 }
+
 .id {
     font-size: 1rem;
     color: grey;
 }
+
 .membre {
     display: flex;
     align-items: center;
 }
+
 .membre img {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .membre .details {
     padding-left: 1.5rem;
     line-height: 1.3;
@@ -73,14 +83,17 @@ h2 {
     cursor: pointer;
     transition: all 0.3s;
 }
+
 .line1 .details {
     margin-left: 15%;
 }
+
 .enfant {
     width: 16%;
     text-align: center;
 
 }
+
 .dernierenfant {
     width: 4%;
 }
