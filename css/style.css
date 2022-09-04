@@ -439,12 +439,11 @@ display: none;
 
 .home .swiper-button-next,
 .home .swiper-button-prev {
-   top: inherit;
-   left: inherit;
-   bottom: 0;
-   right: 0;
+
    height: 7rem;
    width: 7rem;
+   border-radius: 100px;
+   opacity: 0.8;
    background: var(--white);
    color: var(--black);
 }
